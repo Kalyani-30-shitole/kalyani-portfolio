@@ -1,0 +1,252 @@
+.profile {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  padding: 160px 8% 80px;
+  background:
+    radial-gradient(circle at 78% 45%,
+      rgba(74, 222, 128, 0.10),
+      transparent 35%),
+    #080d12;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.profile-content {
+  flex: 1;
+  max-width: 700px;
+  text-align: left;
+  transform: translateY(-15px);
+}
+
+.profile-intro {
+  margin: 0 0 12px;
+  color: #4ade80;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.profile h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(48px, 6vw, 82px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.profile h2 {
+  margin: 24px 0 22px;
+  color: #4ade80;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.profile-description {
+  max-width: 600px;
+  margin: 0 0 32px;
+  color: #9ca3af;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.profile-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: #4ade80;
+  color: #07110b;
+  border: 1px solid #4ade80;
+}
+
+.primary-btn:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #374151;
+}
+
+.secondary-btn:hover {
+  color: #4ade80;
+  border-color: #4ade80;
+  transform: translateY(-2px);
+}
+
+.profile-photo-area {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo-box {
+  position: relative;
+  width: 360px;
+  height: 420px;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: 2px solid #4ade80;
+  border-radius: 4px;
+}
+
+.portrait-label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 13px 10px;
+  background: rgba(25, 35, 46, 0.85);
+  color: #a2a1a1;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 5;
+}
+
+@media (max-width: 1100px) {
+  .profile {
+    gap: 45px;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .profile h1 {
+    font-size: clamp(45px, 6vw, 70px);
+  }
+
+  .profile h2 {
+    font-size: 27px;
+  }
+
+  .profile-description {
+    font-size: 16px;
+  }
+
+  .profile-photo-box {
+    width: 320px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 850px) {
+  .profile {
+    min-height: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+    padding: 125px 6% 70px;
+  }
+
+  .profile-content {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    transform: none;
+  }
+
+  .profile-intro {
+    text-align: center;
+  }
+
+  .profile h1 {
+    font-size: clamp(42px, 10vw, 65px);
+    text-align: center;
+    letter-spacing: -2px;
+  }
+
+  .profile h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .profile-description {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  .profile-buttons {
+    justify-content: center;
+  }
+
+  .profile-photo-box {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile {
+    padding: 110px 5% 60px;
+    gap: 30px;
+  }
+
+  .profile h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .profile h2 {
+    font-size: 22px;
+    margin: 18px 0;
+  }
+
+  .profile-description {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .profile-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 210px;
+  }
+
+  .profile-photo-box {
+    width: 270px;
+    height: 320px;
+  }
+
+  .portrait-label {
+    padding: 11px 8px;
+    font-size: 13px;
+  }
+}

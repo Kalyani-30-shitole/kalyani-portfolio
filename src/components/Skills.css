@@ -1,0 +1,154 @@
+.skills-section {
+  min-height: calc(100vh - 75px);
+  padding: 55px 8% 45px;
+  background: #ffffff;
+  color: #111111;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 35px;
+}
+
+.section-heading span {
+  color: #4ade80;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #777777;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.skills-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-intro {
+  max-width: 750px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.skills-intro h2 {
+  margin: 0 0 15px;
+  font-size: clamp(35px, 3vw, 62px);
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: -2px;
+  color: #111111;
+}
+
+.skills-intro h2 span {
+  color: #4ade80;
+}
+
+.skills-intro p {
+  max-width: 580px;
+  margin: 0;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.6;
+  transform: translateX(40px);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.skill-category {
+  min-height: 170px;
+  padding: 22px;
+  border-top: 2px solid #111111;
+  border-bottom: 1px solid #a2a1a1;
+  transition: 0.3s ease;
+}
+
+.skill-category:hover {
+  border-top-color: #4ade80;
+  transform: translateY(-4px);
+}
+
+.category-number {
+  margin: 0 0 18px;
+  color: #4ade80;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.skill-category h3 {
+  margin: 0 0 18px;
+  color: #111111;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-list span {
+  padding: 7px 11px;
+  border: 1px solid #b5b4b4;
+  color: #484747;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+
+.skill-list span:hover {
+  border-color: #4ade80;
+  color: #111111;
+}
+
+@media (max-width: 1000px) {
+  .skills-section {
+    min-height: auto;
+    padding: 55px 6% 70px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-section {
+    padding: 50px 6% 60px;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .skills-intro {
+    margin-bottom: 35px;
+  }
+
+  .skills-intro h2 {
+    font-size: 38px;
+  }
+
+  .skills-intro p {
+    font-size: 14px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skill-category {
+    min-height: auto;
+  }
+}

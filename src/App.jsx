@@ -1,0 +1,34 @@
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Education from "./components/Education";
+import Certifications from "./components/Certifications";
+import Contact from "./components/Contact";
+
+import "./App.css";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+
+      <main>
+        <Profile />
+
+        <Skills />
+
+        <Projects/>
+
+        <Education/>
+
+        <Certifications/>
+
+        <Contact/>
+
+      </main>
+    </>
+  );
+}
+
+export default App;
