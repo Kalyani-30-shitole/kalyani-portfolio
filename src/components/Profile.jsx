@@ -41,7 +41,7 @@ function Profile() {
 
           <a
             href="/resume.pdf"
-            download="Kalyani_Shitole_Resume.pdf"
+            download="Shitole_Kalyani_Resume.pdf"
             className="secondary-btn">
             Download Resume
           </a>
