@@ -123,6 +123,15 @@ function Projects() {
                 VIEW PORTFOLIO
                 <FaArrowUpRightFromSquare />
               </a>
+
+               <a
+                href="https://github.com/Kalyani-30-shitole/kalyani-portfolio"
+                target="_blank"
+                rel="noopener noreferrer">
+                GITHUB
+                <FaGithub />
+              </a>
+
             </div>
 
           </div>
