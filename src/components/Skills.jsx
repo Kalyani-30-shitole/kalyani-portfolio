@@ -43,6 +43,7 @@ function Skills() {
             <div className="skill-list">
               <span>React</span>
               <span>Bootstrap</span>
+              <span>React Router</span>
             </div>
           </div>
 
@@ -52,9 +53,10 @@ function Skills() {
 
             <div className="skill-list">
               <span>VS Code</span>
-              <span>MongoDB</span>
               <span>Git</span>
               <span>GitHub</span>
+              <span>MongoDB</span>
+              <span>Postman</span>
             </div>
           </div>
 
@@ -64,7 +66,8 @@ function Skills() {
 
             <div className="skill-list">
               <span>REST APIs</span>
-              <span>Postman</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
             </div>
           </div>
 
