@@ -93,7 +93,7 @@ function Projects() {
               <span>JAVASCRIPT</span>
               <span>HTML</span>
               <span>CSS</span>
-              <span>REACT ICONS</span>
+              <span>EmailJS</span>
             </div>
 
             <div className="project-points">
